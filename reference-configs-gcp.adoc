@@ -1,0 +1,82 @@
+---
+sidebar: sidebar 
+permalink: reference-configs-gcp.html 
+keywords: google, gcp, google cloud platform, explore, standard, premium, byol, paygo, disks, supported, capacity, machine types, sizes 
+summary: Google Cloud支援多Cloud Volumes ONTAP 種支援的支援功能。 
+---
+= Google Cloud支援的組態
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Google Cloud支援多Cloud Volumes ONTAP 種支援的支援功能。
+
+
+
+== 依授權支援的組態
+
+可在Google Cloud Platform中以單一節點系統的形式取得。Cloud Volumes ONTAP
+
+[cols="h,d,d,d,d,d,d"]
+|===
+|  | Freemium | PAYGO瀏覽 | PAYGO標準 | PAYGO Premium | 節點型授權 | 容量型授權 
+
+
+| 最大系統容量（磁碟+物件儲存）^1^ | 500 GB | 2 TB ^2^ | 10 TB | 3668 TB | 每個授權368TB | 2 PIB 
+
+
+| 支援的機器類型^3^  a| 
+* Custom-4-16384
+* N1-標準8
+* N1-標準32
+
+| Custom-4-16384 | N1-標準8 | N1-標準32  a| 
+* Custom-4-16384
+* N1-標準8
+* N1-標準32
+
+ a| 
+* Custom-4-16384
+* N1-標準8
+* N1-標準32
+
+
+
+
+| 支援的磁碟類型^4^ 6+| 分區持續磁碟（SSD和標準） 
+|===
+附註：
+
+. 磁碟限制可防止您單獨使用磁碟、達到最大系統容量限制。您可以達到容量上限 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html["將非作用中資料分層至物件儲存設備"^]。
++
+link:reference-limits-gcp.html["深入瞭解Google Cloud的磁碟限制"]。
+
+. PAYGO Explore不支援將資料分層至Google Cloud Storage。
+. 全新Cloud Volumes ONTAP 的功能不再支援custom 4-16384機器類型。
++
+如果您在此機器類型上執行現有的系統、您可以繼續使用、但我們建議您切換至n2-Standard-4機器類型。
+
+. 使用SSD時可啟用增強的寫入效能。
+. 如需Google Cloud Platform區域支援、請參閱 https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes全球區域"^]。
+. 可在雲端供應商的保留或隨需VM執行個體上執行。Cloud Volumes ONTAP不支援使用其他VM執行個體類型的解決方案。
+
+
+
+
+== 支援的磁碟大小
+
+在Google Cloud中、Aggregate最多可包含6個相同類型和大小的磁碟。支援下列磁碟大小：
+
+* 100 GB
+* 500 GB
+* 1 TB
+* 2 TB
+* 4 TB
+* 8 TB
+* 16 TB
+

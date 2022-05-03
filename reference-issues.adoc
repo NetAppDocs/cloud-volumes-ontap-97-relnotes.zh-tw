@@ -1,0 +1,33 @@
+---
+sidebar: sidebar 
+permalink: reference-issues.html 
+keywords: issues, bugs, known issues 
+summary: 已知問題可識別可能導致您無法成功使用本產品版本的問題。 
+---
+= 已知問題
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+已知問題可識別可能導致您無法成功使用本產品版本的問題。
+
+您可以在中找到ONTAP 有關的已知問題 https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["發行說明 ONTAP"^]。
+
+
+
+== 節點停止可能會在多個SVM的HA配對上失敗
+
+如果您計畫在Cloud Volumes ONTAP 具有多個儲存VM（SVM）的HA配對中停止或重新開機某個支援節點、我們建議您在關閉節點之前、先將所有邏輯介面（LIF）預先移轉至合作夥伴節點。
+
+下列範例會從目前（本機）節點移轉所有資料LIF：
+
+「node1：：>網路介面移轉-all -Node local」
+
+此動作可快速將網路移轉至合作夥伴節點、避免偶爾發生停止節點的已知問題。
+
+如果節點因為移轉lifs所需的時間太長而無法停止、則重試重新開機或halt命令應該會使其停止。

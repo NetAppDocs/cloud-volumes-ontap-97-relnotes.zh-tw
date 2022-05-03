@@ -1,0 +1,206 @@
+---
+sidebar: sidebar 
+permalink: reference-configs-aws.html 
+keywords: ec2, instance, type, explore, standard, premium, byol, capacity, maximum, virtual machine, Cloud Volumes ONTAP, supported, configurations, sizes, disks 
+summary: AWS支援多Cloud Volumes ONTAP 種支援的支援功能。 
+---
+= AWS支援的組態
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+AWS支援多Cloud Volumes ONTAP 種支援的支援功能。
+
+
+
+== 依授權支援的組態
+
+AWS可在單一節點系統中使用、也可作為高可用度（HA）節點配對、以提供容錯功能和不中斷營運。Cloud Volumes ONTAP
+
+不支援將單一節點系統升級為HA配對。如果您想在單一節點系統和HA配對之間切換、則需要部署新系統、並將資料從現有系統複寫到新系統。
+
+[cols="h,d,d,d,d,d,d"]
+|===
+|  | Freemium | PAYGO瀏覽 | PAYGO標準 | PAYGO Premium | 節點型授權 | 容量型授權 
+
+
+| 最大系統容量（磁碟+物件儲存） | 500 GiB | 2 TiB | 10 TiB | 368TiB ^1^ | 每個授權368TiB ^1^ | 2 PIB ^1^ 
+
+
+| 支援的EC2執行個體類型^2^  a| 
+* c4.4xlarge
+* c4.8xlarge
+* c5.9xlarge
+* c5.18xlarge
+* c5d.4xlarge ^3^
+* c5d.9xlarge ^3^
+* c5d.18xlarge ^3^
+* c5n.9xlarge ^4^
+* c5n.18xlarge ^4^
+* m4.xlarge
+* m4.2xLarge
+* m4.4xlarge
+* M5.xLarge
+* m5.2xLarge
+* M5.4xLarge
+* m5.16xlarge
+* m5d.8xlarge ^3^
+* m5d.12xlarge ^3^
+* r4.xlarge
+* r4.2xlarge
+* R5.xlarge
+* r5.2xlarge
+* r5.8xlarge
+* r5.12xlarge ^5^
+* r5d.2xlarge ^3^
+
+ a| 
+* m4.xlarge
+* M5.xLarge
+
+ a| 
+* m4.2xLarge
+* m5.2xLarge
+* r4.xlarge
+* R5.xlarge
+
+ a| 
+* c4.4xlarge
+* c4.8xlarge
+* c5.9xlarge
+* c5.18xlarge
+* c5d.4xlarge ^3^
+* c5d.9xlarge ^3^
+* c5d.18xlarge ^3^
+* c5n.9xlarge ^4^
+* c5n.18xlarge ^4^
+* m4.4xlarge
+* M5.4xLarge
+* m5.16xlarge
+* m5d.8xlarge ^3^
+* m5d.12xlarge ^3^
+* r4.2xlarge
+* r5.2xlarge
+* r5.8xlarge
+* r5.12xlarge ^5^
+* r5d.2xlarge ^3^
+
+ a| 
+* c4.4xlarge
+* c4.8xlarge
+* c5.9xlarge
+* c5.18xlarge
+* c5d.4xlarge ^3^
+* c5d.9xlarge ^3^
+* c5d.18xlarge ^3^
+* c5n.9xlarge ^4^
+* c5n.18xlarge ^4^
+* m4.xlarge
+* m4.2xLarge
+* m4.4xlarge
+* M5.xLarge
+* m5.2xLarge
+* M5.4xLarge
+* m5.16xlarge
+* m5d.8xlarge ^3^
+* m5d.12xlarge ^3^
+* r4.xlarge
+* r4.2xlarge
+* R5.xlarge
+* r5.2xlarge
+* r5.8xlarge
+* r5.12xlarge ^5^
+* r5d.2xlarge ^3^
+
+ a| 
+* c4.4xlarge
+* c4.8xlarge
+* c5.9xlarge
+* c5.18xlarge
+* c5d.4xlarge ^3^
+* c5d.9xlarge ^3^
+* c5d.18xlarge ^3^
+* c5n.9xlarge ^4^
+* c5n.18xlarge ^4^
+* m4.xlarge
+* m4.2xLarge
+* m4.4xlarge
+* M5.xLarge
+* m5.2xLarge
+* M5.4xLarge
+* m5.16xlarge
+* m5d.8xlarge ^3^
+* m5d.12xlarge ^3^
+* r4.xlarge
+* r4.2xlarge
+* R5.xlarge
+* r5.2xlarge
+* r5.8xlarge
+* r5.12xlarge ^5^
+* r5d.2xlarge ^3^
+
+
+
+
+| 支援的磁碟類型^6^ 6+| 通用SSD（GP3和gp2）、已配置的IOPS SSD（IO1）、以及處理量最佳化的HDD（ST1）^7^ 
+|===
+附註：
+
+. 在某些組態中、磁碟限制會讓您無法單獨使用磁碟來達到容量限制。在這些情況下、您可以達到容量上限 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html["將非作用中資料分層至物件儲存設備"^]。如需磁碟限制的相關資訊、請參閱 link:reference-limits-aws.html["儲存限制"]。
+. 當您選擇EC2執行個體類型時、可以指定它是共用執行個體或專屬執行個體。
+. 這些執行個體類型包括本機NVMe儲存設備、Cloud Volumes ONTAP 這些儲存設備使用作_Flash Cache。Flash Cache 可透過即時智慧快取來加速資料存取、快取最近讀取的使用者資料和 NetApp 中繼資料。它適用於隨機讀取密集的工作負載、包括資料庫、電子郵件和檔案服務。所有磁碟區都必須停用壓縮、才能充分發揮 Flash Cache 效能的改善效益。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-flash-cache.html["深入瞭解"^]。
+. 從9.7 P5開始支援c5n.9xlarge和c5n.18xlarge。
+. r5.12xlarge執行個體類型具有已知的支援限制。如果節點因發生緊急狀況而意外重新開機、系統可能不會收集用於疑難排解的核心檔案、而會造成問題的根本原因。客戶接受風險及有限支援條款、並在發生此情況時承擔所有支援責任。
+. 使用SSD搭配Cloud Volumes ONTAP 使用時、會啟用增強的寫入效能、包括「支援不一致的標準」、「優質」和「BYOL」。
+. 使用處理量最佳化的HDD（ST1）時、不建議將資料分層至物件儲存設備。
+. 如需AWS區域支援、請參閱 https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes全球區域"^]。
+. 可在雲端供應商的保留或隨需VM執行個體上執行。Cloud Volumes ONTAP不支援使用其他VM執行個體類型的解決方案。
+
+
+
+
+== 支援的磁碟大小
+
+在AWS中、Aggregate最多可包含6個相同類型和大小的磁碟。
+
+[cols="3*"]
+|===
+| 通用SSD（GP3和gp2） | 已配置的IOPS SSD（IO1） | 處理量最佳化HDD（ST1） 
+
+
+ a| 
+* 100 GiB
+* 500 GiB
+* 1 TiB
+* 2 TiB
+* 4 TiB
+* 6 TiB
+* 8 TiB
+* 16 TiB
+
+ a| 
+* 100 GiB
+* 500 GiB
+* 1 TiB
+* 2 TiB
+* 4 TiB
+* 6 TiB
+* 8 TiB
+* 16 TiB
+
+ a| 
+* 500 GiB
+* 1 TiB
+* 2 TiB
+* 4 TiB
+* 6 TiB
+* 8 TiB
+* 16 TiB
+
+
+|===
