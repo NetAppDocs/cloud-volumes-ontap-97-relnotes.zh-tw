@@ -108,25 +108,25 @@ NOTE: 對於某些VM類型、您需要數個BYOL授權、才能達到下列系�
 | DS3_v2 | 13. | 368TiB | 368TiB | 416 TiB | 每個授權使用368TiB 
 
 
-| DS4_v2 | 29 | 368TiB | 368TiB | 928 TiB | 每個授權使用368TiB 
+| DS4_v2 | 29 | 368TiB | 368TiB | 896 TiB | 每個授權使用368TiB 
 
 
-| DS5_v2 | 61. | 368TiB | 368TiB | 1.95 PIB | 每個授權使用368TiB 
+| DS5_v2 | 61. | 368TiB | 368TiB | 896 TiB | 每個授權使用368TiB 
 
 
-| DS13_v2 | 29 | 368TiB | 368TiB | 928 TiB | 每個授權使用368TiB 
+| DS13_v2 | 29 | 368TiB | 368TiB | 896 TiB | 每個授權使用368TiB 
 
 
-| DS14_v2 | 61. | 368TiB | 368TiB | 1.95 PIB | 每個授權使用368TiB 
+| DS14_v2 | 61. | 368TiB | 368TiB | 896 TiB | 每個授權使用368TiB 
 
 
-| DS15_v2 | 61. | 368TiB | 368TiB | 1.95 PIB | 每個授權使用368TiB 
+| DS15_v2 | 61. | 368TiB | 368TiB | 896 TiB | 每個授權使用368TiB 
 
 
-| E32s_v3 | 29 | 368TiB | 368TiB | 928 TiB | 每個授權使用368TiB 
+| E32s_v3 | 29 | 368TiB | 368TiB | 896 TiB | 每個授權使用368TiB 
 
 
-| E48s_v3 | 29 | 368TiB | 368TiB | 928 TiB | 每個授權使用368TiB 
+| E48s_v3 | 29 | 368TiB | 368TiB | 896 TiB | 每個授權使用368TiB 
 
 
 | L8s_v2 | 13. | 368TiB | 368TiB | 416 TiB | 每個授權使用368TiB 
@@ -143,25 +143,25 @@ NOTE: 對於某些VM類型、您需要數個BYOL授權、才能達到下列系�
 | DS3_v2 | 13. | 416 TiB | 2 PIB 
 
 
-| DS4_v2 | 29 | 928 TiB | 2 PIB 
+| DS4_v2 | 29 | 896 TiB | 2 PIB 
 
 
-| DS5_v2 | 61. | 1.95 PIB | 2 PIB 
+| DS5_v2 | 61. | 896 TiB | 2 PIB 
 
 
-| DS13_v2 | 29 | 928 TiB | 2 PIB 
+| DS13_v2 | 29 | 896 TiB | 2 PIB 
 
 
-| DS14_v2 | 61. | 1.95 PIB | 2 PIB 
+| DS14_v2 | 61. | 896 TiB | 2 PIB 
 
 
-| DS15_v2 | 61. | 1.95 PIB | 2 PIB 
+| DS15_v2 | 61. | 896 TiB | 2 PIB 
 
 
-| E32s_v3 | 29 | 928 TiB | 2 PIB 
+| E32s_v3 | 29 | 896 TiB | 2 PIB 
 
 
-| E48s_v3 | 29 | 928 TiB | 2 PIB 
+| E48s_v3 | 29 | 896 TiB | 2 PIB 
 
 
 | L8s_v2 | 13. | 416 TiB | 2 PIB 
