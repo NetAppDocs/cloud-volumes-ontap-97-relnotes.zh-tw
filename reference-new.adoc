@@ -223,8 +223,8 @@ Microsoft Azure現已推出更新版本：Cloud Volumes ONTAP
 
 目前AWS、Azure和Google Cloud Platform均提供此產品的適用版本。Cloud Volumes ONTAP除了所介紹的功能之外 https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["更新ONTAP"^]、Cloud Volumes ONTAP 本版的《》包含下列內容：
 
-* <<Flash Cache support in Azure>>
-* <<Fix for Azure NIC detach events>>
+*  Cache support in Azure
+*  for Azure NIC detach events
 
 
 
