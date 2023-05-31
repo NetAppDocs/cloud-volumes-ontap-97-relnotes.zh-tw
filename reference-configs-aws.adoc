@@ -151,9 +151,9 @@ AWS可在單一節點系統中使用、也可作為高可用度（HA）節點配
 |===
 附註：
 
-. 在某些組態中、磁碟限制會讓您無法單獨使用磁碟來達到容量限制。在這些情況下、您可以達到容量上限 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html["將非作用中資料分層至物件儲存設備"^]。如需磁碟限制的相關資訊、請參閱 link:reference-limits-aws.html["儲存限制"]。
+. 在某些組態中、磁碟限制會讓您無法單獨使用磁碟來達到容量限制。在這些情況下、您可以達到容量上限 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["將非作用中資料分層至物件儲存設備"^]。如需磁碟限制的相關資訊、請參閱 link:reference-limits-aws.html["儲存限制"]。
 . 當您選擇EC2執行個體類型時、可以指定它是共用執行個體或專屬執行個體。
-. 這些執行個體類型包括本機NVMe儲存設備、Cloud Volumes ONTAP 這些儲存設備使用作_Flash Cache。Flash Cache 可透過即時智慧快取來加速資料存取、快取最近讀取的使用者資料和 NetApp 中繼資料。它適用於隨機讀取密集的工作負載、包括資料庫、電子郵件和檔案服務。所有磁碟區都必須停用壓縮、才能充分發揮 Flash Cache 效能的改善效益。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-flash-cache.html["深入瞭解"^]。
+. 這些執行個體類型包括本機NVMe儲存設備、Cloud Volumes ONTAP 這些儲存設備使用作_Flash Cache。Flash Cache 可透過即時智慧快取來加速資料存取、快取最近讀取的使用者資料和 NetApp 中繼資料。它適用於隨機讀取密集的工作負載、包括資料庫、電子郵件和檔案服務。所有磁碟區都必須停用壓縮、才能充分發揮 Flash Cache 效能的改善效益。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-flash-cache.html["深入瞭解"^]。
 . 從9.7 P5開始支援c5n.9xlarge和c5n.18xlarge。
 . r5.12xlarge執行個體類型具有已知的支援限制。如果節點因發生緊急狀況而意外重新開機、系統可能不會收集用於疑難排解的核心檔案、而會造成問題的根本原因。客戶接受風險及有限支援條款、並在發生此情況時承擔所有支援責任。
 . 使用SSD搭配Cloud Volumes ONTAP 使用時、會啟用增強的寫入效能、包括「支援不一致的標準」、「優質」和「BYOL」。

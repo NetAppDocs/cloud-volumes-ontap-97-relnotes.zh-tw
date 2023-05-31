@@ -16,7 +16,7 @@ summary: 包含多項新功能與增強功能。Cloud Volumes ONTAP
 [role="lead"]
 包含多項新功能與增強功能。Cloud Volumes ONTAP
 
-最新版Cloud Manager也會提供其他功能與增強功能。請參閱 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["Cloud Manager版本資訊"^] 以取得詳細資料。
+最新版Cloud Manager也會提供其他功能與增強功能。請參閱 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["Cloud Manager版本資訊"^] 以取得詳細資料。
 
 
 
@@ -32,9 +32,9 @@ summary: 包含多項新功能與增強功能。Cloud Volumes ONTAP
 
 單一節點系統或 HA 配對可購買的授權數量不受限制。
 
-請注意、磁碟限制可能會讓您無法單獨使用磁碟來達到容量限制。您可以超越磁碟限制 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html["將非作用中資料分層至物件儲存設備"^]。如需磁碟限制的相關資訊、請參閱本版本說明中的儲存限制。
+請注意、磁碟限制可能會讓您無法單獨使用磁碟來達到容量限制。您可以超越磁碟限制 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["將非作用中資料分層至物件儲存設備"^]。如需磁碟限制的相關資訊、請參閱本版本說明中的儲存限制。
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html["瞭解如何將額外的系統授權新增Cloud Volumes ONTAP 至功能完善"^]。
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html["瞭解如何將額外的系統授權新增Cloud Volumes ONTAP 至功能完善"^]。
 
 
 
@@ -173,7 +173,7 @@ https://cloud.netapp.com/cloud-volumes-global-regions["請參閱支援的Azure�
 * r5.12xlarge ^2^
 
 
-^1^這些執行個體類型包括本機NVMe儲存設備、Cloud Volumes ONTAP 此儲存設備用作_Flash Cache。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-flash-cache.html["深入瞭解"^]。
+^1^這些執行個體類型包括本機NVMe儲存設備、Cloud Volumes ONTAP 此儲存設備用作_Flash Cache。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-flash-cache.html["深入瞭解"^]。
 
 ^2^ r5.12xlarge執行個體類型具有已知的支援限制。如果節點因發生緊急狀況而意外重新開機、系統可能不會收集用於疑難排解的核心檔案、而會造成問題的根本原因。客戶接受風險及有限支援條款、並在發生此情況時承擔所有支援責任。
 
@@ -237,7 +237,7 @@ Flash Cache 可透過即時智慧快取來加速資料存取、快取最近讀�
 
 使用此VM類型部署新系統、或修改現有系統以使用此VM類型、您就能自動善用Flash Cache。
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-flash-cache.html["深入瞭解啟用Cloud Volumes ONTAP Flash Cache on支援的相關資訊、包括資料壓縮的限制"^]。
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-flash-cache.html["深入瞭解啟用Cloud Volumes ONTAP Flash Cache on支援的相關資訊、包括資料壓縮的限制"^]。
 
 
 
@@ -252,7 +252,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-flash-ca
 * 必須從 Cloud Manager 完成升級。 Cloud Volumes ONTAP您不應 Cloud Volumes ONTAP 使用 System Manager 或 CLI 來升級功能。這樣做可能會影響系統穩定性。
 * 您可以從Cloud Volumes ONTAP 9.6版升級至32版。Cloud Manager會提示您將現有Cloud Volumes ONTAP 的NetApp 9.6系統升級至9.7版。
 +
-http://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html["瞭解如何在Cloud Manager通知您的情況下進行升級"^]。
+http://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html["瞭解如何在Cloud Manager通知您的情況下進行升級"^]。
 
 * 單一節點系統的升級可讓系統離線長達25分鐘、在此期間I/O會中斷。
 * 升級 HA 配對不中斷營運、而且 I/O 不中斷。在此不中斷營運的升級程序中、會同時升級每個節點、以繼續為用戶端提供 I/O 服務。
