@@ -21,7 +21,6 @@
   <block id="feb49be8ef50e34ae8a47a5369859187" category="section-title">AWS C2S環境的限制</block>
   <block id="286cc15dc9f73773a029b936b2788c19" category="inline-link">開始使用AWS C2S環境</block>
   <block id="157a4538d8adbcfa830439923f7be5bf" category="summary">這些版本說明Cloud Volumes ONTAP 介紹有關更新功能、限制和已知問題的資訊。</block>
-  <block id="b440c9b0c3ae0c42d32403ccefbe0375" category="doc">更新說明Cloud Volumes ONTAP</block>
   <block id="b889869e31827a33530d6fd02141fdb5" category="summary">Azure支援多Cloud Volumes ONTAP 種支援的支援功能。</block>
   <block id="e4b60b51b40a0907e38b3293d36780e6" category="doc">Azure支援的組態</block>
   <block id="c334038ed8a782403ae705a8de1f584b" category="section-title">依授權支援的組態</block>
@@ -502,7 +501,6 @@
   <block id="1c58b0eb30a6dcb357eb70a5f2b7b763" category="inline-link">瞭解如何在Cloud Manager通知您的情況下進行升級</block>
   <block id="9f0f02784feedfa2549a9e3a51cfa315" category="list-text">單一節點系統的升級可讓系統離線長達25分鐘、在此期間I/O會中斷。</block>
   <block id="00795e3f043d0bab791590ffc0257204" category="list-text">升級 HA 配對不中斷營運、而且 I/O 不中斷。在此不中斷營運的升級程序中、會同時升級每個節點、以繼續為用戶端提供 I/O 服務。</block>
-  <block id="da38098873cb3db962a9491ab33ff93d" category="sidebar">版本資訊首頁</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新增功能</block>
   <block id="4847e034bb0a55fcbc8a3380d6a3ab80" category="sidebar">AWS</block>
   <block id="3a580f142203677f1f0bc30898f63f53" category="sidebar">Azure</block>
@@ -521,9 +519,6 @@
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp社群</block>
   <block id="ff6c37cbc252e306a6b4e390ec13cbc1" category="sidebar">Cloud Central部落格</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">雲端網路研討會</block>
-  <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="sidebar">Cloud Volumes ONTAP</block>
-  <block id="dea335c9c6f638eb584011e253ad6ca1" category="sidebar">解決方案ONTAP</block>
-  <block id="30af1a6878bac3a7aaed5d0e64e7b511" category="paragraph">提供不同的授權選項、讓您選擇符合需求的消費模式。Cloud Volumes ONTAP</block>
   <block id="37439fa615a442ec183c1c602f9755f1" category="paragraph">容量型授權的形式為_package_。當您部署Cloud Volumes ONTAP 一套解決方案時、您可以根據業務需求、從多個授權套件中進行選擇。</block>
   <block id="deb56fb5a824215375b16e72749e2aa3" category="inline-link">深入瞭解這些授權選項</block>
   <block id="33f66f5b18b24875dca7a81c8f84c5b9" category="cell">896 TiB</block>
@@ -546,7 +541,6 @@
   <block id="cf8932e0b406d0080602ae2ba6050f34" category="paragraph"><block ref="a93831aad103880218b6184b641135d6" category="inline-link-rx"></block>。</block>
   <block id="9dc25dec6d124cf86502e589c40d61af" category="paragraph"><block ref="856eab59dd4487874302c47901a1ac92" category="inline-link-rx"></block>。</block>
   <block id="64440bb71539a777dc59cfbda8a3e5ee" category="list-text">這種VM類型包括本機NVMe儲存設備、Cloud Volumes ONTAP 這些儲存設備以_Flash Cache的形式使用。Flash Cache 可透過即時智慧快取來加速資料存取、快取最近讀取的使用者資料和 NetApp 中繼資料。它適用於隨機讀取密集的工作負載、包括資料庫、電子郵件和檔案服務。所有磁碟區都必須停用壓縮、才能充分發揮 Flash Cache 效能的改善效益。<block ref="b6abeaa384c5670d0721bcc6323011fc" category="inline-link-rx"></block>。</block>
-  <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">所有BlueXP文件</block>
   <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
   <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
   <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
@@ -562,4 +556,11 @@
 單一資料服務 SVM 橫跨整個 Cloud Volumes ONTAP 系統。</block>
   <block id="2dbd9a217bce4c7ba4ef467f57d6875c" category="list-text">您可以為 Cloud Volumes ONTAP BYOL 單一節點或 HA 配對系統購買多個節點型授權、以分配超過 368 TiB 的容量、最多可分配 2 PIB 的最大測試和支援系統容量限制。請注意、磁碟限制可能會讓您無法單獨使用磁碟來達到容量限制。您可以超越磁碟限制<block ref="aea0958203307daa433f894622f3e640" category="inline-link-rx"></block>。<block ref="ca37ce4dde5616ef242d545490c7e6ee" category="inline-link-rx"></block>。雖然 Cloud Volumes ONTAP 支援最多 2 個 PIB 的最大測試和支援系統容量、但超過 2 個 PIB 限制會導致系統組態不受支援。</block>
   <block id="de9d6749570efc87e63811b5947fc250" category="list-text">AWS Secret Cloud 和 Top Secret Cloud 地區支援從 Cloud Volumes ONTAP 9.12.1 開始購買多個節點型授權。</block>
+  <block id="6b32e99bddf60938239aabe092cb4c16" category="paragraph">有多種授權選項可供Cloud Volumes ONTAP 選擇。每個選項都能讓您選擇符合需求的消費模式。</block>
+  <block id="27fe4eb3edbaff8f250e2d51f7462681" category="inline-link">套件</block>
+  <block id="13dba612a4f942a80cbc82c5f678d57c" category="inline-link">更多關於容量型授權的資訊</block>
+  <block id="d994821c78c4538d3406d1baa52bc470" category="paragraph"><block ref="55cb08b70ffaa99b7ec18860c0180e14" category="inline-link-rx"></block> <block ref="7c9574dfed81dad53ed1c2acf3a874b5" category="inline-link-rx"></block></block>
+  <block id="c3647f40e3574e0e6f49e20c19135bfa" category="section-title">使用 Azure VM 延伸功能的限制</block>
+  <block id="9d167ed7d52d81da8d83590ec3b5a4af" category="paragraph">Cloud Volumes ONTAP 不支援部署中的 Azure 虛擬機器（ VM ）延伸功能和 VM 應用程式。在 Azure 中使用 Cloud Volumes ONTAP 搭配 VM 延伸功能會導致作業延遲， NetApp 建議您避免這些延遲。</block>
+  <block id="397c7d6cf1f12b7b8d421a9c73013b76" category="sidebar">Cloud Volumes ONTAP 9.7 版本資訊</block>
 </blocks>
