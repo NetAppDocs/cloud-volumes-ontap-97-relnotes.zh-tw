@@ -61,7 +61,6 @@
   <block id="d59048f21fd887ad520398ce677be586" category="inline-link">深入瞭解</block>
   <block id="a63be6f12cd03be8e118239f1f944bda" category="list-text">使用SSD時會啟用增強寫入效能、但使用DS3_v2虛擬機器類型時則不會啟用。</block>
   <block id="a3f8304ab1695053d71855c60f8abf63" category="inline-link">Cloud Volumes全球區域</block>
-  <block id="7c7627c6477255acb2239bd1be90f346" category="list-text">如需Azure地區支援、請參閱<block ref="2b6a522631c3b3b8afac5466195e108a" category="inline-link-rx"></block>。</block>
   <block id="e7089e61c962cfdae0de5b1d0748b6f2" category="list-text">可在雲端供應商的保留或隨需VM執行個體上執行。Cloud Volumes ONTAP不支援使用其他VM執行個體類型的解決方案。</block>
   <block id="b049fcbe8198301adc6bf87634a02845" category="section-title">HA 配對</block>
   <block id="2eacfdd792ca3ab121472c95654b43ec" category="paragraph">在Cloud Volumes ONTAP Azure中部署以HA配對形式部署的時、您可以從下列組態中進行選擇。</block>
@@ -123,7 +122,6 @@
   <block id="b1cc92c4fd4cc62fe29503eb59d61723" category="list-text">r5.12xlarge執行個體類型具有已知的支援限制。如果節點因發生緊急狀況而意外重新開機、系統可能不會收集用於疑難排解的核心檔案、而會造成問題的根本原因。客戶接受風險及有限支援條款、並在發生此情況時承擔所有支援責任。</block>
   <block id="0c4c4e63836f218793463e3bcdaddf27" category="list-text">使用SSD搭配Cloud Volumes ONTAP 使用時、會啟用增強的寫入效能、包括「支援不一致的標準」、「優質」和「BYOL」。</block>
   <block id="907c78338365697be8fd8d4a130503c8" category="list-text">使用處理量最佳化的HDD（ST1）時、不建議將資料分層至物件儲存設備。</block>
-  <block id="4375839c669e051e5f2a8de11ba0c5d0" category="list-text">如需AWS區域支援、請參閱<block ref="2b6a522631c3b3b8afac5466195e108a" category="inline-link-rx"></block>。</block>
   <block id="f1ef8a69abb63b240d611c09ea5ddde6" category="paragraph">在AWS中、Aggregate最多可包含6個相同類型和大小的磁碟。</block>
   <block id="afcafb45b2c97e15b8215381244daacf" category="cell">通用SSD（GP3和gp2）</block>
   <block id="f38d1b7914333c6e9323df43b6106a84" category="cell">已配置的IOPS SSD（IO1）</block>
@@ -387,7 +385,6 @@
   <block id="46e869bc0f7a5fcdc09df010e1f48b25" category="list-text">全新Cloud Volumes ONTAP 的功能不再支援custom 4-16384機器類型。</block>
   <block id="0e3cb01898d99d0091e2a6f5a7572390" category="paragraph">如果您在此機器類型上執行現有的系統、您可以繼續使用、但我們建議您切換至n2-Standard-4機器類型。</block>
   <block id="5063d3259058d90bbca06465957626d7" category="list-text">使用SSD時可啟用增強的寫入效能。</block>
-  <block id="7093754c2bc2f151c7deef337385971a" category="list-text">如需Google Cloud Platform區域支援、請參閱<block ref="2b6a522631c3b3b8afac5466195e108a" category="inline-link-rx"></block>。</block>
   <block id="d29bff99e1f1d5529824e9017672d630" category="paragraph">在Google Cloud中、Aggregate最多可包含6個相同類型和大小的磁碟。支援下列磁碟大小：</block>
   <block id="dcfebc6fbca2c5316f55c914e6593d2d" category="list-text">100 GB</block>
   <block id="70f79b00cb7649d94d473895d6c540d2" category="list-text">1 TB</block>
@@ -433,7 +430,6 @@
   <block id="ce8c95cf9de92e0d85852b999d00a17a" category="list-text">德國北部（公共）</block>
   <block id="cfdd4f6f66dabd2b425ab10b5c56c3da" category="list-text">德國West Central（公共）</block>
   <block id="4a977616fcd7ade62dbf55a1f8db1bd0" category="inline-link">請參閱支援的Azure地區完整清單</block>
-  <block id="07a1c66013de0c57f2bd7d69d3354c41" category="paragraph"><block ref="0f846b36f06a975303e325a2ffb2c92b" category="inline-link-rx"></block>。</block>
   <block id="12f1dfb594b821e25e55ab014437acc4" category="section-title">9.7 P4（2020年6月2日）</block>
   <block id="cae74b75cb879fa6011c4bc1e9acafed" category="inline-link">檢視P4修補程式中修正的錯誤清單</block>
   <block id="cbbe5951f603eb168d6ea68a73b678bc" category="paragraph">9.7 P4 for Cloud Volumes ONTAP NetApp的修補程式版本現在可透過Cloud Manager 3.8及更新版本取得。Cloud Manager會提示您將現有系統升級至此修補程式版本。<block ref="37b180138fbfa25f28dd1e0aa35747d2" category="inline-link-rx"></block> （需要NetApp支援網站登入）。</block>
@@ -525,7 +521,6 @@
   <block id="dbe94f36417009d827f76ccf107bd90c" category="section-title">不應使用自動應用程式資源管理解決方案</block>
   <block id="2f9882645b2c32820ad085240bacb763" category="paragraph-title">對於HA、每個節點或整個HA配對的授權容量限制是多少？</block>
   <block id="fc9a388cd18c69244f22554de6f0d544" category="paragraph-title">對於AWS中的HA系統、鏡射資料是否會根據容量限制計算？</block>
-  <block id="1f129df010c594cb0d37bd30745a3820" category="paragraph"><block ref="1f129df010c594cb0d37bd30745a3820" category="inline-link-rx"></block></block>
   <block id="79d3c4941fdb49ae08cc30405f716cce" category="list-text">在某些組態中、磁碟限制會讓您無法單獨使用磁碟來達到容量限制。在這些情況下、您可以達到容量上限<block ref="aea0958203307daa433f894622f3e640" category="inline-link-rx"></block>。如需磁碟限制的相關資訊、請參閱 <block ref="71ccaacc6f6c8feca068c7ff1a7b2eb5" category="inline-link-macro-rx"></block>。</block>
   <block id="d424e7f11ba3f8c54b78553f58815d63" category="list-text">這些執行個體類型包括本機NVMe儲存設備、Cloud Volumes ONTAP 這些儲存設備使用作_Flash Cache。Flash Cache 可透過即時智慧快取來加速資料存取、快取最近讀取的使用者資料和 NetApp 中繼資料。它適用於隨機讀取密集的工作負載、包括資料庫、電子郵件和檔案服務。所有磁碟區都必須停用壓縮、才能充分發揮 Flash Cache 效能的改善效益。<block ref="b6abeaa384c5670d0721bcc6323011fc" category="inline-link-rx"></block>。</block>
   <block id="ae90a2e4532cb9b615489b63c36e2383" category="paragraph"><block ref="dca5658ae26fff987979f5de0a83e9fd" category="inline-link-rx"></block>。</block>
@@ -563,4 +558,9 @@
   <block id="c3647f40e3574e0e6f49e20c19135bfa" category="section-title">使用 Azure VM 延伸功能的限制</block>
   <block id="9d167ed7d52d81da8d83590ec3b5a4af" category="paragraph">Cloud Volumes ONTAP 不支援部署中的 Azure 虛擬機器（ VM ）延伸功能和 VM 應用程式。在 Azure 中使用 Cloud Volumes ONTAP 搭配 VM 延伸功能會導致作業延遲， NetApp 建議您避免這些延遲。</block>
   <block id="397c7d6cf1f12b7b8d421a9c73013b76" category="sidebar">Cloud Volumes ONTAP 9.7 版本資訊</block>
+  <block id="0890aa708cef7529c2bd35cb7d2895df" category="list-text">如需 AWS 區域支援<block ref="e55b14db85f4d4837890e415926626e0" category="inline-link-rx"></block>、請參閱。</block>
+  <block id="f0de068c81c765820aca0fa8fe017396" category="list-text">如需 Azure 區域支援<block ref="e55b14db85f4d4837890e415926626e0" category="inline-link-rx"></block>、請參閱。</block>
+  <block id="ef9be83cb59b0572a3581a6724316e48" category="list-text">如需 Google Cloud Platform 地區支援、請參閱<block ref="e55b14db85f4d4837890e415926626e0" category="inline-link-rx"></block>。</block>
+  <block id="26f113c6240bf0450440356676516cf1" category="paragraph"><block ref="26f113c6240bf0450440356676516cf1" category="inline-link-rx"></block></block>
+  <block id="045622dfb07c6145c4ccaf9f2078e56b" category="paragraph"><block ref="782e925b243dc89a59a0bc67d50ce99b" category="inline-link-rx"></block>。</block>
 </blocks>

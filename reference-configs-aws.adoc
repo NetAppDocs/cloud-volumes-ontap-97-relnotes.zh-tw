@@ -158,7 +158,7 @@ AWS可在單一節點系統中使用、也可作為高可用度（HA）節點配
 . r5.12xlarge執行個體類型具有已知的支援限制。如果節點因發生緊急狀況而意外重新開機、系統可能不會收集用於疑難排解的核心檔案、而會造成問題的根本原因。客戶接受風險及有限支援條款、並在發生此情況時承擔所有支援責任。
 . 使用SSD搭配Cloud Volumes ONTAP 使用時、會啟用增強的寫入效能、包括「支援不一致的標準」、「優質」和「BYOL」。
 . 使用處理量最佳化的HDD（ST1）時、不建議將資料分層至物件儲存設備。
-. 如需AWS區域支援、請參閱 https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes全球區域"^]。
+. 如需 AWS 區域支援 https://bluexp.netapp.com/cloud-volumes-global-regions["Cloud Volumes全球區域"^]、請參閱。
 . 可在雲端供應商的保留或隨需VM執行個體上執行。Cloud Volumes ONTAP不支援使用其他VM執行個體類型的解決方案。
 
 
